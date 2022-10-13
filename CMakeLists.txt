@@ -185,7 +185,7 @@ install(
     EXPORT HashColon-export
     DESTINATION share/cmake/hashcolon/
     FILE hashcolon-config.cmake
-    COMPONENT
+    EXPORT_LINK_INTERFACE_LIBRARIES
 )
 
 include(CPack)
