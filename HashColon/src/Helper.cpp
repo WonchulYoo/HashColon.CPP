@@ -390,10 +390,10 @@ namespace HashColon
 		{
 			// run function ok()
 			ok();		
-			// wait until the period to be finished.
-			std::this_thread::sleep_until(_start);
 			// reset start time
 			_start += _period;
+			// wait until the new period to be started.
+			std::this_thread::sleep_until(_start);			
 		}
 		else
 		{
